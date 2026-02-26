@@ -14,6 +14,16 @@
     "nodemon": "^3.1.10"
   },
   "dependencies": {
-    "express": "^5.1.0"
-  }
+    "cookie": "^1.1.1",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarsh-kls/node.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adarsh-kls/node.js/issues"
+  },
+  "homepage": "https://github.com/adarsh-kls/node.js#readme"
 }

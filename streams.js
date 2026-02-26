@@ -10,10 +10,11 @@ app.use(function(req,res,next){
     res.send('this is the middleware')
     next();
 });
-app.get('/',(req,res)=>{
-    res.send('home page')
+app.get('/',(req,res,next)=>{
+    return next(new Error('something went wrong'))
 });
-app.get('/adarsh',(req,res)=>{
-    res.send('adarsh page')
+app.use(function(err,req,res,next){
+    console.error(err.stack);
+    res.status(500).send('something broke')
 });
-app.listen(3000)
+app.listen(5000)
